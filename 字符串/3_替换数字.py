@@ -56,7 +56,9 @@ class Solution(object):
                 new_index -= 1
             old_index -= 1
 
-        return ''.join(res)
+        # - `''`：**空字符串**
+        # - `.join(可迭代对象)`：是**字符串的内置方法**
+        return ''.join(res) # 把序列里的所有元素拼接成一整个新字符串，元素之间用「分隔符」隔开
 
 if __name__ == "__main__":
     s = "a1b2c3"
